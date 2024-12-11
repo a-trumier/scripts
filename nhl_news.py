@@ -31,6 +31,8 @@ jsawn = json.loads(resp2.content)
 resp2.close()
 
 game_dict = {}
+
+## placeholder TZ
 tz = pytz.timezone("America/Regina")
 print("Games from " + cur_date + " to " + jsawn["nextStartDate"])
 for day in jsawn["gameWeek"]:
