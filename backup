@@ -1,4 +1,5 @@
 #!/bin/bash
+# Alex Trumier <adtrumier@gmail.com>
 
 if [ $# -ne 4 ]; then
     echo "Usage: backup <local directory> <user> <ip address of backup server> <backup directory>"
