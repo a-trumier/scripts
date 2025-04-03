@@ -1,19 +1,13 @@
 #!/bin/bash
 # Alex Trumier <adtrumier@gmail.com>
 
-if [ "$#" -eq 0 ]; then
-    echo "Usage: cless <filename>"
-    exit 1
-fi
-
-if [ "$#" -ge 2 ]; then
+if [ "$#" -ne 1 ]; then
     echo "Usage: cless <filename>"
     exit 1
 fi
 
 if [ ! -f $1 ]; then
     echo "Error: Given argument is not a file."
-    echo "Usage: cless <filename>"
     exit
 fi
 
