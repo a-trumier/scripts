@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source .env
+
+EXCLUDE='--exclude=".mozilla" --exclude=".cache" --exclude=".cargo" --exclude=".config/Code" --exclude="private_libraries" --exclude="common"'
+
+rsync $EXCLUDE -aXSAUH --progress --preallocate ~ $IP_AND_DIR
