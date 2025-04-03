@@ -9,6 +9,4 @@ EXCLUDE_DIRS='--exclude=".mozilla" --exclude=".cache" --exclude=".cargo" --exclu
 
 EXTEND=$2@$3:$4
 
-echo "rsync" $EXCLUDE_DIRS "-aXSAUH --progress --preallocate" $1 $EXTEND
-
-#rsync -aXSAUH --progress --preallocate $1 $EXTEND
+rsync $EXCLUDE_DIRS -aXSAUH --progress --preallocate $1 $EXTEND
