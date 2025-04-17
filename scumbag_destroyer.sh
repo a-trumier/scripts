@@ -23,5 +23,4 @@ for x in $FILES; do
         echo Renaming $x to $NAME
         mv $PATH_TO_FILES/$x $PATH_TO_FILES/$NAME
     fi
-done
-    
+done 

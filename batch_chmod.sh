@@ -6,7 +6,6 @@
 
 if [ $(($#)) -ne 3 ]; then
     echo "Usage: batch_chmod <directory> <suffix> <new mode>"
-    echo ${1:0:1}
     exit 1
 fi
 
