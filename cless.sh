@@ -2,7 +2,7 @@
 # Alex Trumier <adtrumier@gmail.com>
 
 if [ "$#" -lt 1 ]; then
-    echo "Usage: cless <filename>"
+    echo "Usage: cless <filenames>"
     exit 1
 fi
 
